@@ -20,6 +20,12 @@ void swap(int* a, int* b) {
 
 // This character swap function takes advantage of the ASCII encoding of characters.
 void charSwap(char* a, char* b) {
+    // To examine the ASCII values of the chars:
+    /*
+    printf("ASCII Encoding of 1st char = %d\n", (int)*a);
+    printf("ASCII Encoding of 2nd char = %d\n", (int)*b);
+    printf("\n");
+    */
 
     // In all of these, dereference the pointer, and then cast to an int.
     *a = (int)*a + (int)*b;
