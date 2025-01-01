@@ -56,4 +56,11 @@ int main() {
     printf("First int = %d\n", int1);
     printf("Second int = %d\n", int2);
     printf("\n");
+
+    swap(&int1, &int2);
+    printf("After calling the correct swap, the values are now: \n");
+    // Expected output: Values are swapped from previous print statements
+    printf("First int = %d\n", int1);
+    printf("Second int = %d\n", int2);
+    printf("\n");
 }
