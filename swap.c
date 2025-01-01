@@ -32,3 +32,13 @@ void charSwap(char* a, char* b) {
     *b = (int)*a - (int)*b;
     *a = (int)*a - (int)*b;
 }
+
+int main() {
+
+    int int1, int2;
+    char char1, char2;
+    printf("Enter the two integers to swap: \n");
+    scanf("%d", &int1);
+    scanf("%d", &int2);
+    printf("\n");
+}
