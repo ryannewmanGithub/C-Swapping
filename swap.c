@@ -49,4 +49,11 @@ int main() {
     printf("Second int = %d\n", int2);
     printf("\n");
 
+
+    incorrectSwap(int1, int2);
+    printf("After calling the incorrect swap, the values are now: \n");
+    // Expected output: No change from previous print statements of the user-inputted values
+    printf("First int = %d\n", int1);
+    printf("Second int = %d\n", int2);
+    printf("\n");
 }
