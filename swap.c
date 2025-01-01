@@ -9,3 +9,11 @@ void incorrectSwap(int a, int b) {
     b = a - b; // (a + b) - b = a
     a = a - b; // (a + b) - a = b
 }
+
+// This is the correct way to swap because it passes in the pointers, which have the memory addresses
+// of the integers as values.
+void swap(int* a, int* b) {
+    *a = *a + *b;
+    *b = *a - *b;
+    *a = *a - *b;
+}
