@@ -17,3 +17,12 @@ void swap(int* a, int* b) {
     *b = *a - *b;
     *a = *a - *b;
 }
+
+// This character swap function takes advantage of the ASCII encoding of characters.
+void charSwap(char* a, char* b) {
+
+    // In all of these, dereference the pointer, and then cast to an int.
+    *a = (int)*a + (int)*b;
+    *b = (int)*a - (int)*b;
+    *a = (int)*a - (int)*b;
+}
