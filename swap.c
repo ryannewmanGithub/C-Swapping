@@ -37,8 +37,16 @@ int main() {
 
     int int1, int2;
     char char1, char2;
+
+
     printf("Enter the two integers to swap: \n");
     scanf("%d", &int1);
     scanf("%d", &int2);
     printf("\n");
+
+    printf("You entered: \n");
+    printf("First int = %d\n", int1);
+    printf("Second int = %d\n", int2);
+    printf("\n");
+
 }
