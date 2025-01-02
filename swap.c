@@ -63,4 +63,14 @@ int main() {
     printf("First int = %d\n", int1);
     printf("Second int = %d\n", int2);
     printf("\n");
+
+    // This is to remove the newline from the input buffer from when the user entered in the second integer
+    scanf("%c", &char1);
+
+    printf("Enter the two characters to swap (Do NOT have a space between or before the characters)\n");
+    printf("For example, if you want to swap 'a' and 'b', enter ab and then hit enter.\n");
+    printf("You should only be hitting enter once.\n");
+    scanf("%c", &char1);
+    scanf("%c", &char2);
+    printf("\n");
 }
