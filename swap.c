@@ -73,4 +73,13 @@ int main() {
     scanf("%c", &char1);
     scanf("%c", &char2);
     printf("\n");
+
+
+    charSwap(&char1, &char2);
+    printf("After calling the character swap, the values are now: \n");
+    printf("First char = %c\n", char1);
+    printf("Second char = %c\n", char2);
+    printf("\n");
+
+    return 0;
 }
