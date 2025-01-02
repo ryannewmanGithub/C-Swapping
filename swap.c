@@ -1,4 +1,8 @@
 #include <stdio.h>
+// Before compiling with VS Code C/C++ extension, run this command in PowerShell terminal: gcc swap.c -o swap.exe
+
+// Compiling on Linux: gcc -o swap swap.c
+// Then run by doing : ./swap
 
 // This is incorrect. Do NOT do this because this only affects the local copy of the integers a and b.
 // Instead, you need to pass in the pointers.
@@ -34,6 +38,7 @@ void charSwap(char* a, char* b) {
 }
 
 int main() {
+
 
     int int1, int2;
     char char1, char2;
