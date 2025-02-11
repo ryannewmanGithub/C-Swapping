@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 
 // & passes the references into the function so that the values can actually be swapped
 void swap(int &a, int &b) {
@@ -8,20 +8,29 @@ void swap(int &a, int &b) {
     b = temp;
 }
 
+void print(std::string str) {
+    std::cout << str << std::endl;
+}
+
+void print(int i) {
+    std::cout << i << std::endl;
+}
+
 int main() {
+    
 
     int mya = 3;
     int myb = 5;
 
-    std::cout << "Before swap:" << std::endl;
-    std::cout << mya << std::endl;
-    std::cout << myb << std::endl;
+    print("Before swap:");
+    print(mya);
+    print(myb);
 
     swap(mya, myb);
 
-    std::cout << "After swap:" << std::endl;
-    std::cout << mya << std::endl;
-    std::cout << myb << std::endl;
+    print("After swap:");
+    print(mya);
+    print(myb);
 
     return 0;
 }
