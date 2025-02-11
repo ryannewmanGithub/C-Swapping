@@ -1,5 +1,7 @@
 #include <iostream>
 
+
+// & passes the references into the function so that the values can actually be swapped
 void swap(int &a, int &b) {
     int temp = a;
     a = b;
